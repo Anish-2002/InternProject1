@@ -1,0 +1,4 @@
+This is a demo council website.
+Only working pages are index and Register pet webpages.
+Index page is the home page.
+Register pet button redirects to register page for pets, and Register pet button redirects to the VBCS FORM to register pet.
