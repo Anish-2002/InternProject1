@@ -1,0 +1,144 @@
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow:auto;
+    background-color: #000000;
+    font-family: 'Arial', sans-serif;
+}
+
+.navlinks {
+    padding-left: 0;
+}
+.navbar img{
+    height: 100px;
+    width:fit-content;
+    outline: none;
+    margin:5px;
+    padding:20px;
+    object-fit:fill;
+    background-color:#000000;
+    
+
+}
+    .navbar img:hover {
+        background-color:#000000;
+    }
+    
+    .navbar img.active {
+        background-color:#000000;
+    }
+    
+
+li {
+    float: left;
+    position:static;
+}
+
+/* Default link style */
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration:solid;
+    font-size: 16px;
+    position:-webkit-sticky/* Safari */;
+  position: sticky;
+}
+
+li a:hover {
+    font-size: 18px;
+    position: relative;
+    z-index: 10; 
+    display: inline-block;
+    margin-right: 10px; 
+    padding: 5px 10px;
+
+}
+
+li a:active {
+    font-size: 18px;
+    position: relative;
+    z-index: 10; 
+    display: inline-block;
+    margin-right: 10px; 
+    padding: 5px 10px;
+}
+
+/* Container Styles */
+.container {
+    position: relative;
+    text-align: center;
+    color: rgb(26, 26, 26);
+    margin-bottom: 60px;
+}
+
+.container img {
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.title-subtitle {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-variant: small-caps;
+    color: rgb(1, 21, 248);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 15px;
+}
+.container2{
+    width: 50%;
+    height: 300px;
+    position:relative;
+    Bottom: 50px;
+    left:100px;
+    font-family: 'Courier New', Courier, monospace;
+    font-variant: small-caps;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+}
+
+.title h1 {
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.subtitle h6 {
+    font-size: 24px;
+    margin: 10px 0 0;
+}
+
+.hyperlinks-container {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+.hyperlinks-container a {
+    margin: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3383fc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hyperlinks-container a:hover {
+    background-color: #0d00ff;
+}
+
+
+
