@@ -7,35 +7,113 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="table.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="dropdown.css">
+
 </head>
 <body>
+      <!-- Navigation Bar -->
     <nav class="navbar">
-        
-        <div  class="logo">
-       <a class="logo__link" href="index.html"><img class="logo__image" src="Pictures/Logo.jpg" alt="Logo WA"></a>
-           
-           <ul class="navlinks">
-               <li><a href="community.html">Community and Residents</a></li>
-               <li><a href="business.html">Business and Investment</a></li>
-               <li><a href="places.html">Places and Activities</a></li>
-               <li><a href="building.html">Building and Development</a></li>
-               <li><a href="parking.html">Parking and Transport</a></li>
-               <li><a href="council.html">About Council</a></li>
-           </ul>
-       
-       </nav>
+        <div class="logo">
+            <a class="logo__link" href="Index.html">
+                <img class="logo__image" src="Pictures/Logo.jpg" alt="Logo WA">
+            </a>
+        </div>
+        <ul class="navlinks">
+            <!-- Community and Residents -->
+            <li class="dropdown">
+                <a href="community.html">Community and Residents</a>
+                <ul class="dropdown-menu">
+                    <li><a href="roads_potholes.html">Report Issue</a>
+                    <li><a href="Community and Residents/bins.html">Bins, Rubbish and Recycling</a></li>
+                    <li><a href="Community and Residents/emergencies.html">Emergencies</a></li>
+                    <li><a href="Community and Residents/libraries.html">Libraries</a></li>
+                    <li><a href="registerpet.html">Pets and Other Animals</a></li>
+                    <li><a href="Community and Residents/roads.html">Roads and Parking</a></li>
+                    <li><a href="Community and Residents/health.html">Health and Wellbeing</a></li>
+                    <li><a href="Community and Residents/environment.html">Environment and Sustainability</a></li>
+                </ul>
+            </li>
 
+            <!-- Business and Investment -->
+            <li class="dropdown">
+                <a href="Business.html">Business and Investment</a>
+                <ul class="dropdown-menu">
+                    <li><a href="Business and investment/permits.html">Business Permits and Requirements</a></li>
+                    <li><a href="Business and investment/resources.html">Business Resources</a></li>
+                    <li><a href="Business and investment/events.html">Events and Support</a></li>
+                    <li><a href="Business and investment/tenders.html">Tenders</a></li>
+                </ul>
+            </li>
+
+            <!-- Places and Activities -->
+            <li class="dropdown">
+                <a href="Places.html">Places and Activities</a>
+                <ul class="dropdown-menu">
+                    <li><a href="Places and activities/festival.html">Festivals</a></li>
+                    <li><a href="Places and activities/parks.html">Parks</a></li>
+                    <li><a href="Places and activities/boating.html">Boating and Waterways</a></li>
+                </ul>
+            </li>
+
+            <!-- Building and Development -->
+            <li class="dropdown">
+                <a href="Building.html">Building and Development</a>
+                <ul class="dropdown-menu">
+                    <li><a href="Building and Development/building_services.html">Building Services</a></li>
+                    <li><a href="Building and Development/infrastructure.html">Infrastructure</a></li>
+                    <li><a href="Building and Development/swimming.html">Swimming Pools and Spas</a></li>
+                </ul>
+            </li>
+
+            <!-- Parking and Transport -->
+            <li class="dropdown">
+                <a href="Parking.html">Parking and Transport</a>
+                <ul class="dropdown-menu">
+                    <li><a href="Parking and Transport/parking_permits.html">Parking Permits</a></li>
+                    <li><a href="Parking and Transport/parking_fines.html">Parking Fines</a></li>
+                    <li><a href="Parking and Transport/where_to_park.html">Where to Park</a></li>
+                    <li><a href="Parking and Transport/parking_rules.html">Parking Rules and Enforcement</a></li>
+                </ul>
+            </li>
+
+            <!-- About Council -->
+            <li class="dropdown">
+                <a href="council.html">About Council</a>
+                <ul class="dropdown-menu">
+                    <li><a href="About Council/careers.html">Careers</a></li>
+                    <li><a href="About Council/contact.html">Contact</a></li>
+                    <li><a href="About Council/news.html">News and Media</a></li>
+                    <li><a href="About Council/councilors.html">Councilors and Elections</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+ <!-- main -->
     <div class="container">
         <img src="Pictures/pet.jpg" alt="Pet">
         <div class="title-subtitle">
             <div class="title"><h1>Pet registration</h1></div>
             <div class="subtitle"><h6>Owning a pet comes with many benefits, but also<br>some legal responsibilities. Registering your pet <br>with your local Council is one of them.</h6></div>
         </div>
-        
         <div class="hyperlinks-container">
-            <a href="https://oic-vbcs-oic-vb-axetemueuybx.builder.me-dubai-1.ocp.oraclecloud.com/ic/builder/design/Council_Portal/1.0/preview/webApps/citycouncil/" target="_blank">Register Pet</a>
+            <a href="#" onclick="return confirmRedirect('https://oic-vbcs-oic-vb-axetemueuybx.builder.me-dubai-1.ocp.oraclecloud.com/ic/builder/rt/Council_Portal/live/webApps/citycouncil/?page=shell&shell=petregistration')">
+                Register Your Pet
+             </a>
+             <script>
+                function confirmRedirect(url) {
+                   if (confirm("You are about to leave this site and go to the council pet registration page. Do you wish to proceed?")) {
+                       window.open(url, '_blank');
+                       return false;
+                   }
+                   return false;
+                }
+                </script>   
+        
         </div>
     </div>
+       
+
     <div>
         <h1>Dog Registration Fees</h1>
         <div class="table">
